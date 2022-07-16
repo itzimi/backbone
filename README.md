@@ -4,21 +4,17 @@
 
 ## Daniel Lanao, Backbone challenge
 
-Para incrementar eficiencia, me pareció pertinente guardar toda la información en una base de datos. Para este caso se utilizó una base de datos MySQL
-
-y luego realizar la consulta la base de datos con el zipcode
+Para incrementar eficiencia, me pareció pertinente guardar toda la información de los zipcodes en una base de datos.
+Para este caso se utilizó una base de datos MySQL
 
 ## Laravel
 
 El proyecto se realizó en Laravel Framework 8.83.19
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
 ## ZipCodes
 
-La fuente original de los datos esta en  Códigos Postales México[Laravel documentation](https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx).
+La fuente original de los datos esta en  Códigos Postales México [ZIP CODES](https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx).
 
 ## Formateo de información
 
