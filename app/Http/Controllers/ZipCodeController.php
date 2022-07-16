@@ -10,8 +10,11 @@ class ZipCodeController extends Controller
 
     public function index($zip_code)
     {
+        //if zipcode has 0 before
+        $zip_code = (int)$zip_code;
+
         //get the input zip code
-        $result= ZipCode::where('d_codigo',"$zip_code")->first();
+        $result= ZipCode::where('d_codigo',$zip_code)->first();
 
         //if there are no zipcodes in the db, return error
         if(!$result)return array("error_code" => 204,"description" => "No Content", "comment" => "Server received the request, but there is no information to send back");
@@ -34,7 +37,7 @@ class ZipCodeController extends Controller
 
         //Since one ZIpcode can have many settlements we do a second querry for the settlements array
         $result_settlements=array();
-        $settlements=ZipCode::where('d_codigo',"$zip_code")->get();
+        $settlements=ZipCode::where('d_codigo',$zip_code)->get();
         foreach ($settlements as $settlement) {
           $aux_settlement=array(
             "key" => $settlement->id_asenta_cpcons,
